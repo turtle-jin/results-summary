@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: hankengrotesk;
+    src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+    font-weight: 500, 700, 800;
+}
+
+:root {
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%); 
+    --Lightslateblue: hsl(252, 100%, 67%);
+    --Lightroyalblue: hsl(241, 81%, 54%);
+
+    --Violetblue: hsla(256, 72%, 46%, 1);
+    --Persianblue: hsla(241, 72%, 46%, 0);
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+
+    /* fonts */
+    --hanken: "hankengrotesk", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-family: var(--hanken);
+    font-size: 18px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px var(--Lightlavender);
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    width: 20rem;
+    height: 30rem;
+    background: linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
+    color: var(--Lightlavender);
+    text-align: center;
+    padding: 2rem;
+}
+
+.circle {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(var(--Violetblue), var(--Persianblue));
+}
+
+h1, h2{
+    color: var(--White);   
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.title {
+    font-weight: 700;
+}
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    width: 20rem;
+    height: 30rem;
+    padding: 2rem;
+}
+
+.catagories {
+    display: flex;
+    flex-direction: column;
+}
+
+.red, 
+.yellow, 
+.green,
+.blue {
+    display: flex;
+}
