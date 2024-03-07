@@ -191,3 +191,14 @@ button:hover {
 
 }
 
+@media (max-width: 650px) {
+    .body {
+        width: 375px;
+        padding: 0;
+        box-shadow: none;
+    }
+    .container {
+        flex-direction: column;
+        padding: 0;
+    }
+}
